@@ -1,0 +1,19 @@
+.sidebar-links__wrapper {
+  position: absolute;
+  text-align: right;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+}
+
+.sidebar_link {
+  display: block;
+}
+
+a.sidebar_link {
+  color: white;
+}
+
+a.sidebar_link:hover {
+  color: white;
+}

@@ -1,0 +1,11 @@
+.mobile-header {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-header h1 {
+  padding: 40px;
+  margin: 0;
+}
