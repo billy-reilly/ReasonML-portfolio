@@ -7,6 +7,7 @@
     "bs-fetch": "github:buckletypes/bs-fetch",
     "bs-json": "github:buckletypes/bs-json",
     "bs-webapi": "^0.7.0",
+    "gh-pages": "^1.1.0",
     "moment": "^2.20.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
@@ -19,6 +20,8 @@
     "reason-scripts": "0.8.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
