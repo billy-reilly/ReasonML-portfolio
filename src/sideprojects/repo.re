@@ -42,7 +42,6 @@ let make = (~repo: RepoData.repo, _children) => {
     ReasonReact.NoUpdate
   },
   render: (self) => {
-    /* Js.log(self.state.topics.names); */
     let topics =
       Array.length(self.state.topics.names) > 0 ?
         <div className="repo-footer">

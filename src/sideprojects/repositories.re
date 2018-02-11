@@ -43,7 +43,6 @@ let make = (_children) => {
       })
     },
   didMount: (self) => {
-    /* TopicData.fetchTopics("billy-reilly.github.io") */
     RepoData.fetchRepos()
     |> Js.Promise.then_(
          (repoData) => {
