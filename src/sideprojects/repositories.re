@@ -38,7 +38,7 @@ let make = (_children) => {
     switch action {
     | Loaded(loadedRepos) =>
       ReasonReact.Update({
-        repos: Some(sortRepos(filterRepos(2, loadedRepos))),
+        repos: Some(sortRepos(filterRepos(12, loadedRepos))),
         loadingRepos: false
       })
     },
