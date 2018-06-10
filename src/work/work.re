@@ -8,7 +8,7 @@ let make = (_children) => {
       <p>
         (
           ReasonReact.stringToElement(
-            "I'm currently working as a front-end dev at On Track Retail, developing JavaScript web apps for rail ticketing."
+            "I'm currently working as a front-end dev at On Track Retail, developing JavaScript web apps for the transport sector."
           )
         )
       </p>
