@@ -13,7 +13,9 @@ let sortRepos: array(RepoData.repo) => array(RepoData.repo) = [%bs.raw
   {|
     function(repos) {
       var moment = require('moment');
-      return repos.sort(function(a, b) {
+      return repos.filter(function(repo) {
+        return !repo[5];
+      }).sort(function(a, b) {
         return moment(a[2]).isBefore(moment(b[2]));
       });
     }

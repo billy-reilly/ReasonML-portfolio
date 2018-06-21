@@ -3,7 +3,8 @@ type repo = {
   html_url: string,
   updated_at: string,
   description: string,
-  tags_url: string
+  tags_url: string,
+  fork: bool
 };
 
 let parseRepoJson = (json: Js.Json.t) : repo =>
@@ -12,7 +13,8 @@ let parseRepoJson = (json: Js.Json.t) : repo =>
     html_url: json |> field("html_url", string),
     updated_at: json |> field("updated_at", string),
     description: json |> field("description", string),
-    tags_url: json |> field("tags_url", string)
+    tags_url: json |> field("tags_url", string),
+    fork: json |> field("fork", bool)
   };
 
 let parseReposResponseJson = (json) =>
